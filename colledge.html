@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Form</title>
+</head>
+<body>
+    <h1>College Admission Form</h1>
+    <form >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+            <option value="computer_science">Computer Science</option>
+            <option value="engineering">Engineering</option>
+            <option value="business">Business</option>
+        </select><br>
+
+        <label for="profile_image">Profile Image:</label>
+        <input type="file" id="profile_image" name="profile_image"><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" list="city_list">
+        <datalist id="city_list">
+            <option value="New York"></option>
+            <option value="Los Angeles"></option>
+            <option value="Chicago"></option>
+            <!-- Add more city options here -->
+        </datalist><br>
+
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>
